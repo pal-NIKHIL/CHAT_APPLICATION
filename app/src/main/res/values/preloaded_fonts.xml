@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abhaya_libre</item>
+        <item>@font/aldrich</item>
+        <item>@font/alegreya_sans_sc_bold</item>
+        <item>@font/alegreya_sans_sc_thin</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/bevan</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/caesar_dressing</item>
+        <item>@font/dela_gothic_one</item>
+        <item>@font/dm_sans</item>
+        <item>@font/poppins</item>
+        <item>@font/poppins_medium</item>
+        <item>@font/poppins_semibold</item>
+        <item>@font/saira_stencil_one</item>
+    </array>
+</resources>

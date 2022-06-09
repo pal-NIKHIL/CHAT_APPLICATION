@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MAIN"
+    android:background="#1B202D">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6.7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/messages"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_3"
+            android:layout_marginHorizontal="180dp"
+            android:layout_gravity="center|left"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="status"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:layout_marginLeft="15dp">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:fillViewport="true"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="98dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="13dp"
+                    android:backgroundTint="#1B202D"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mother_icon"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins"
+                            android:text="Mummy"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="98dp"
+                    android:layout_margin="13dp"
+                    android:backgroundTint="#1B202D"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pp_icon"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins"
+                            android:text="Prasoon"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="98dp"
+                    android:layout_margin="13dp"
+                    android:backgroundTint="#1B202D"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gg_icon"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins"
+                            android:text="♥♥"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="98dp"
+                    android:layout_margin="13dp"
+                    android:backgroundTint="#1B202D"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kk_icon"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins"
+                            android:text="Kartik"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="98dp"
+                    android:layout_margin="13dp"
+                    android:backgroundTint="#1B202D"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/aa_icon"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins"
+                            android:text="Aniket"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.2">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="30dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#292F3F">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#292F3F"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="51dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/mother_icon"
+                        android:layout_gravity="left|center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="90dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Mummy  ♥♥"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:fontFamily="@font/poppins"
+                        android:text="kya Ho raha hai ?"
+                        android:textColor="#B3B9C9"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="90dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Just Now"
+                        android:textColor="#B3B9C9"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#292F3F"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="51dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/bhai_icon"
+                        android:layout_gravity="left|center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="90dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="ÑÄ¥ÉÉÑ"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:fontFamily="@font/poppins"
+                        android:text="khelena chalna hai kya"
+                        android:textColor="#B3B9C9"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="90dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08:43"
+                        android:textColor="#B3B9C9"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#292F3F"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="51dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/dad_icon"
+                        android:layout_gravity="left|center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="90dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Papa ☺"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:fontFamily="@font/poppins"
+                        android:text="padhai kaise chal raha hai"
+                        android:textColor="#B3B9C9"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="90dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08:03"
+                        android:textColor="#B3B9C9"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#292F3F"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="51dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/ss_icon"
+                        android:layout_gravity="left|center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="90dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Neha ¼"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:fontFamily="@font/poppins"
+                        android:text="khana hogaya"
+                        android:textColor="#B3B9C9"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="90dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:30"
+                        android:textColor="#B3B9C9"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#292F3F"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="51dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/pp_icon"
+                        android:layout_gravity="left|center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="90dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Prà§oon"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:fontFamily="@font/poppins"
+                        android:text="bhai bhandi nahi mile rahi hai"
+                        android:textColor="#B3B9C9"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="90dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today"
+                        android:textColor="#B3B9C9"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#292F3F"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="51dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/bb_icon"
+                        android:layout_gravity="left|center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="90dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Aniket ☺♀"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:fontFamily="@font/poppins"
+                        android:text="Aaj mast privacy mila"
+                        android:textColor="#B3B9C9"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="90dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yesterday"
+                        android:textColor="#B3B9C9"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#292F3F"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp">
+                    <ImageView
+                        android:layout_width="51dp"
+                        android:layout_height="51dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/kk_icon"
+                        android:layout_gravity="left|center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="90dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Kartik Roommate"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:fontFamily="@font/poppins"
+                        android:text="Exam mein lagne wala hai"
+                        android:textColor="#B3B9C9"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="90dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01:55"
+                        android:textColor="#B3B9C9"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

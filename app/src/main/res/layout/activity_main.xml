@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/upper_part"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/tree3" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".6"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="379dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/leaf_bg"
+            android:scaleType="fitXY"/>
+
+        <Button
+            android:id="@+id/button_signin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aadhar_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#254E2F"
+            android:onClick="setprofile_button"
+            android:text="Button" />
+
+        <EditText
+            android:id="@+id/aadhar_name"
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edt_textback2"
+            android:drawableStart="@drawable/aadhar"
+            android:hint="    Aadhar Number"
+            android:inputType="number" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/edt_textback2"
+            android:paddingTop="5dp"
+            app:ccp_areaCodeDetectedCountry="true" />
+
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="193dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/upper_part"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/ccp"
+            android:background="@drawable/edt_textback2"
+            android:hint="    Phone Number"
+            android:inputType="phone" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_signin"
+            android:layout_centerHorizontal="true"
+            android:text="I have read and agree to the Terms"
+            android:textColor="#280E4C"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="670dp" />
+
+        <ProgressBar
+            android:id="@+id/profile_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
