@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FINAL_CHAT_APPLICATION</string>
     <string name="messages">Messages</string>
+    <string name="from">from</string>
+    <string name="orbitron">Orbitron</string>
+    <string name="my_text"><u>Message</u></string>
 </resources>

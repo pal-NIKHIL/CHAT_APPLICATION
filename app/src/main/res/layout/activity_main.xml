@@ -4,80 +4,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#000113">
 
     <RelativeLayout
         android:id="@+id/upper_part"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight=".5">
+        android:layout_weight="0.5">
 
         <ImageView
+            android:id="@+id/v_shape"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="center"
-            android:src="@drawable/tree3" />
+            android:src="@drawable/bg_vector" />
+
+        <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gifTextView"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/anim_6" />
+
+        <TextView
+            android:id="@+id/login_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gifTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight=".6"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="379dp">
-
-        <ImageView
+        android:layout_weight=".6">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:src="@drawable/leaf_bg"
-            android:scaleType="fitXY"/>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/login_heading">
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginLeft="27dp"
+                android:paddingTop="5dp"
+                app:ccp_areaCodeDetectedCountry="true"
+                app:ccp_contentColor="@color/white"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:backgroundTintMode="screen"
+                android:backgroundTint="@color/white"
+                android:id="@+id/filledTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                app:hintTextColor="#AAB7CA"
+                app:boxBackgroundColor="#000113"
+                app:boxBackgroundMode="filled"
+                android:textColorHint="@color/white"
+                android:layout_marginRight="35dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:id="@+id/user_name"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:backgroundTintMode="screen"
+                android:backgroundTint="@color/white"
+                android:id="@+id/filledTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aadhar Number"
+                app:hintTextColor="#AAB7CA"
+                app:boxBackgroundColor="#000113"
+                android:textColorHint="@color/white"
+                app:startIconDrawable="@drawable/aaadd"
+               app:startIconTintMode="screen"
+                android:layout_marginHorizontal="32dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="12"
+                app:counterTextColor="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="#94A3B8">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/aadhar_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
 
         <Button
             android:id="@+id/button_signin"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/aadhar_name"
             android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="150dp"
             android:layout_marginBottom="5dp"
-            android:backgroundTint="#254E2F"
+            android:backgroundTint="#334155"
             android:onClick="setprofile_button"
             android:text="Button" />
 
-        <EditText
-            android:id="@+id/aadhar_name"
-            android:layout_width="350dp"
-            android:layout_height="52dp"
-            android:layout_below="@+id/user_name"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/edt_textback2"
-            android:drawableStart="@drawable/aadhar"
-            android:hint="    Aadhar Number"
-            android:inputType="number" />
-
-        <com.hbb20.CountryCodePicker
-            android:id="@+id/ccp"
-            android:layout_width="wrap_content"
-            android:layout_height="52dp"
-            android:layout_marginLeft="27dp"
-            android:background="@drawable/edt_textback2"
-            android:paddingTop="5dp"
-            app:ccp_areaCodeDetectedCountry="true" />
-
-
-        <EditText
-            android:id="@+id/user_name"
-            android:layout_width="193dp"
-            android:layout_height="52dp"
-            android:layout_below="@+id/upper_part"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="20dp"
-            android:layout_toRightOf="@+id/ccp"
-            android:background="@drawable/edt_textback2"
-            android:hint="    Phone Number"
-            android:inputType="phone" />
 
         <CheckBox
             android:id="@+id/checkBox"
@@ -86,7 +142,7 @@
             android:layout_below="@+id/button_signin"
             android:layout_centerHorizontal="true"
             android:text="I have read and agree to the Terms"
-            android:textColor="#280E4C"
+            android:textColor="#AAB7CA"
             android:textSize="16dp"
             tools:layout_editor_absoluteX="58dp"
             tools:layout_editor_absoluteY="670dp" />
